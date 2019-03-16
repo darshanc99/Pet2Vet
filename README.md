@@ -10,13 +10,6 @@
 ---
 #### A one stop solution to find help for stray animals and also your pets and a lot more!
 
-<div align="center">
-	
-<br>
-
-
-</div>
-
 ---
 
 ### Basic Features:
@@ -30,28 +23,28 @@
 
 <h3 > Pet2Vet as web-app  </h3>
 <br>
-<img src="./first.gif" width=700px>
+<img src="./webapp-1.jpg" width=700px>
 
 <br>
 
-<img src="./second.gif" width=700px>
+<img src="./webapp-2.jpg" width=700px>
 
 <br>
 
-<img src="./third.gif" width=700px>
+<h3 > Pet2Vet as web-app  </h3>
+<br>
+<img src="./bot-1.jpg" width=700px>
 
 <br>
-<img src="./fourth.gif" width=700px>
 
 </div>
 
 ------------------------------------------
 
 ### TODOs:
-* [ ] Scrape internship and student offers. 
-* [ ] Statistical attendance visualization.
-* [ ] Notify users for attendance below given criteria.at
-* [ ] Integrate the web app with Google Assistant to manage attendance on the go! 
+* [ ] Real time database of NGOs.
+* [ ] Directly complaint to municipality about feral animal issues. 
+* [ ] Integrate the web app with Google Assistant to ease the process. 
  
 ---
 
