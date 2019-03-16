@@ -35,6 +35,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(80))
 
 
+
 @login_manager.user_loader
 def load_user(user_id):
 	return User.query.get(int(user_id))
@@ -148,6 +149,15 @@ def ngo():
 def contact():
     return render_template('contact.html')
 
+@app.route('/petcare/')
+@login_required
+def firstaid():
+    return render_template('petcare.html')
+
+@app.route('/adopt/')
+@login_required
+def adopt():
+    return render_template('adopt.html')
 
 if __name__=='__main__':
     db.create_all()
