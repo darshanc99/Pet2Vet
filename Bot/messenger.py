@@ -28,7 +28,7 @@ def bot_endpoint():
         # use your imagination afterwards
         if user_id != page_id:
 
-            if bool(re.match(r'((h+e+y+(o)?)|(y+o+)|(h+(e+|a+)ll*o+)|(h+i+)|(h(a+)lo+)', message_text)):
+            if bool(re.match(r'((h+e+y+(o)?)|(y+o+)|(h+(e+|a+)ll*o+)|(h+i+)|(h(a+)lo+))', message_text.lower())):
                 ctx = {
                     'recipient': {
                         'id': user_id,
@@ -114,4 +114,4 @@ def bot_endpoint():
 
 
 debug(True)
-run(reloader=True, port=8080)
+run(reloader=True, port=8000)
