@@ -16,7 +16,7 @@
 * Find nearest vets and NGOs for animals you find in distress. 
 * Find the nearest adoption houses to adopt a pet. 
 * Get first aid solutions for animals in distress. 
-* Ability to report feral animal issues to the municipal corporation. 
+* Ability to report feral animal issues to the NGOs. 
 ---
 
 <div align="center">
