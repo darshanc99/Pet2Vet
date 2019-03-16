@@ -23,17 +23,17 @@
 
 <h3 > Pet2Vet as web-app  </h3>
 <br>
-<img src="./webapp-1.jpg" width=700px>
+<img src="./webapp-1.jpeg" width=700px>
 
 <br>
 
-<img src="./webapp-2.jpg" width=700px>
+<img src="./webapp-2.jpeg" width=700px>
 
 <br>
 
 <h3 > Pet2Vet as web-app  </h3>
 <br>
-<img src="./bot-1.jpg" width=700px>
+<img src="./bot-1.png" width=700px>
 
 <br>
 
