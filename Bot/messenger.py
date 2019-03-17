@@ -43,16 +43,24 @@ def bot_endpoint():
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'kal dekhte hai.',
+                        'text': 'Please tell me your location.',
+                    'quick_replies' : [{
+                        'content_type': 'location',
+                        "title": "My Location",
+                        'payload' : 'Location',
+                    }]
                     }
                 }
+                response=send_to_messenger(ctx)  
+                loc = body['entry'][0]['messaging'][0]['message']['location']
+                response=send_to_messenger(loc)
             elif message_text=='2':
                 ctx = {
                     'recipient': {
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'ghar se nikalke dhund le',
+                        'text': 'Please visit the website.',
                     }
                 }
             elif message_text=='3':
@@ -61,7 +69,7 @@ def bot_endpoint():
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'tu doctor hai kya?',
+                        'text': 'Please check out the videos on the website.',
                     }
                 }
             elif message_text=='4':
@@ -79,7 +87,7 @@ def bot_endpoint():
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'kyu bey, baap k paas zyada paisa hai kya?',
+                        'text': 'Please find the info on our website.',
                     }
                 }
             elif message_text=='6':
@@ -88,7 +96,7 @@ def bot_endpoint():
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'Lunch time, baad mein aana!',
+                        'text': 'We are currently working on this feature.',
                     }
                 }
             elif message_text=='7':
@@ -97,7 +105,7 @@ def bot_endpoint():
                         'id': user_id,
                     },
                     'message': {
-                        'text': 'Baadmein aana',
+                        'text': 'We are currently working on this feature.',
                     }
                 }        
             else:
