@@ -36,7 +36,7 @@
 
 <br>
 
-<img src="./map.png" width=700px>
+<img src="./map.PNG" width=700px>
 
 <br>
 
