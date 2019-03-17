@@ -61,7 +61,7 @@
 #### This project still has scope of development, so you can also contribute to this Project as follows:
 * [Fork](https://github.com/darshanc99/Pet2Vet) this Repository.
 * Clone your Fork on a different branch:
-	* `git clone -b <name-of-branch> https://github.com/darshan99/Pet2Vet.git`
+	* `git clone -b <name-of-branch> https://github.com/darshanc99/Pet2Vet.git`
 * After adding any feature:
 	* Goto your fork and create a pull request.
 	* We will test your modifications and merge changes.
