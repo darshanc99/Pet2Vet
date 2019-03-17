@@ -159,6 +159,11 @@ def firstaid():
 def adopt():
     return render_template('adopt.html')
 
+@app.route('/location/')
+@login_required
+def location():
+    return render_template('location.html')
+
 if __name__=='__main__':
     db.create_all()
     app.run(debug=True)
