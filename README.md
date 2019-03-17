@@ -36,6 +36,10 @@
 
 <br>
 
+<img src="./map.png" width=700px>
+
+<br>
+
 <h3 > Pet2Vet as messenger bot  </h3>
 <br>
 <img src="./bot-1.png" width=700px>
