@@ -24,8 +24,7 @@ def bot_endpoint():
         user_id = body['entry'][0]['messaging'][0]['sender']['id']
         page_id = body['entry'][0]['id']
         message_text = body['entry'][0]['messaging'][0]['message']['text']
-        # we just echo to show it works
-        # use your imagination afterwards
+        loc_lat,loc_long=0,0
         if user_id != page_id:
 
             if bool(re.match(r'((h+e+y+(o)?)|(y+o+)|(h+(e+|a+)ll*o+)|(h+i+)|(h(a+)lo+))', message_text.lower())):
@@ -51,9 +50,23 @@ def bot_endpoint():
                     }]
                     }
                 }
-                response=send_to_messenger(ctx)  
-                loc = body['entry'][0]['messaging'][0]['message']['location']
-                response=send_to_messenger(loc)
+                response=send_to_messenger(ctx)
+                loc_lat=body['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['coordinates']['lat']
+                loc_long=body['entry'][0]['messaging'][0]['message']['attachments'][0]['payload']['coordinates']['long']
+        
+                  
+                
+            elif loc_long and loc_lat:
+                ctx={
+                'recipient': {
+                    'id': user_id,
+                },
+                'message': {
+                    'text': 'Your location is: '+loc_lat+','+loc_long,
+                    }
+                }
+                response=send_to_messenger(ctx)
+                
             elif message_text=='2':
                 ctx = {
                     'recipient': {
